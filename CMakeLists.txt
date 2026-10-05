@@ -54,6 +54,9 @@ install(
     DESTINATION include
 )
 
+install(DIRECTORY urdf
+  DESTINATION share/${PROJECT_NAME})
+
 # Add Tests
 if(BUILD_TESTING)
     install(DIRECTORY test DESTINATION share/${PROJECT_NAME})
