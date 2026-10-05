@@ -360,9 +360,6 @@ void PlanarMove::PreUpdate(const gz::sim::UpdateInfo& _info, gz::sim::EntityComp
         }
 
         last_update_time_ = gz_time_now;
-
-        const auto vel = base_link_.WorldLinearVelocity(_ecm);
-        const auto pos = base_link_.WorldPose(_ecm);
     }
 }
 
